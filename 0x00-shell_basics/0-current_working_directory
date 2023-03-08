@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "pwd"
+c=$(pwd)
+echo "$(readlink -f "$c")"
